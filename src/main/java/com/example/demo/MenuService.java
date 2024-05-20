@@ -1,9 +1,13 @@
 package com.example.demo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.*;
 
 @Service
 public class MenuService {
+     @Autowired
+     private PlatRepository platRepository;
+
     private List<Plat> plats;
 
     public Menu genererMenu() {

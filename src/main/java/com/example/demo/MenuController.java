@@ -16,4 +16,5 @@ public class MenuController {
     public Menu getMenu() {
         return menuService.genererMenu();
     }
+
 }
